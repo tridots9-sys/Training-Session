@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <section class="container">
+        <header class="navbar">3
+            <div class="title">
+                <img src="asset/img/setting 1.png" alt="Icon">
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="navbar-list">
+                <img src="asset/img/3d-square 1.png" alt="icon">
+                <h3>Product</h3>
+            </div>
+            <div class="navbar-list">
+                <img src="asset/img/user-square 1.png" alt="icon">
+                <h3>Dashboard</h3>
+            </div>
+            <div class="navbar-list">
+                <img src="asset/img/key-square@2x.png" alt="icon">
+                <h3>Customer</h3>
+            </div>
+            <div class="navbar-list">
+                <img src="asset/img/wallet-money 2.png" alt="icon">
+                <h3>Income</h3>
+            </div>
+            <div class="navbar-list">
+                <img src="asset/img/discount-shape 1.png" alt="icon">
+                <h3>Promote</h3>
+            </div>
+            <div class="navbar-list">
+                <img src="asset/img/message-question 1.png" alt="icon">
+                <h3>Help</h3>
+            </div>
+        </header>
+        <main class="sub-container">
+            <header class="sub-header">
+                <div class="menu-bar">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <h1>Hello Kesavan 🖐</h1>
+                <div class="search">
+                    <img src="asset/img/search 1.png">
+                    <input type="search" placeholder="Search">
+                </div>
+            </header>
+            <div class="card">
+                <div class="sub-card">
+                    <img src="asset/img/Group 2.png">
+                    <div>
+                        <h3>Total Customers</h3>
+                        <h2>5,443</h2>
+                    </div>
+                </div>
+                <div class="sub-card">
+                    <img src="asset/img/Group 1.png">
+                    <div>
+                        <h3>Members</h3>
+                        <h2>1,893</h2>
+                    </div>
+                </div>
+                <div class="sub-card">
+                    <img src="asset/img/Group 10.png">
+                    <div>
+                        <h3>Active Now</h3>
+                        <h2>189</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="table-content">
+                <header class="table-header">
+                    <div class="heading">
+                        <h1>All Customers</h1>
+                        <h4>Active Members</h4>
+                    </div>
+                    <div class="filters">
+                        <input type="search" placeholder="Search">
+                        <div>
+                            <h4>Sort By:</h4>
+                            <select>
+                                <option>Newest</option>
+                                <option>Last</option>
+                                <option>Active</option>
+                                <option>In Active</option>
+                            </select>
+                        </div>
+                    </div>
+                </header>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <th>Customer Name</th>
+                            <th>Company</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                        </thead>
+                        <tbody id="data">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </section>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</html>

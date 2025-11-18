@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Layout Without Bootstrap</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+            background: #222;
+            color: #fff;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        /* LAYOUT */
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 25%;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            background: #f1f1f1;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #000;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background: #ddd;
+        }
+
+        /* MAIN CONTENT */
+        .content {
+            width: 75%;
+        }
+
+        /* CAROUSEL */
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            animation: slide 12s infinite;
+        }
+
+        .carousel img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .carousel img:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .carousel img:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 1;
+            }
+
+            33% {
+                opacity: 1;
+            }
+
+            38% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* PRODUCT GRID */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body h4 {
+            color: #007BFF;
+            margin-bottom: 5px;
+        }
+
+        .card-body h5 {
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            background: #222;
+            color: white;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .content {
+                width: 100%;
+            }
+
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 600px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="brand">Start Template</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <h3>Shop Name</h3>
+            <a href="#">Category 1</a>
+            <a href="#">Category 2</a>
+            <a href="#">Category 3</a>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="content">
+
+            <!-- CAROUSEL -->
+            <div class="carousel">
+                <img src="img/slide1.jpg" alt="">
+                <img src="img/slide2.jpg" alt="">
+                <img src="img/slide3.jpg" alt="">
+            </div>
+
+            <!-- PRODUCTS GRID -->
+            <div class="products">
+
+                <div class="card">
+                    <img src="img/product1.jpg">
+                    <div class="card-body">
+                        <h4>Item One</h4>
+                        <h5>$24.99</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/product2.jpg">
+                    <div class="card-body">
+                        <h4>Item Two</h4>
+                        <h5>$24.99</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/product3.jpg">
+                    <div class="card-body">
+                        <h4>Item Three</h4>
+                        <h5>$24.99</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © Your Website 2025
+    </footer>
+
+</body>
+
+</html>

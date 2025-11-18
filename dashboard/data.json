@@ -1,0 +1,162 @@
+[
+  {
+    "Customer_Name": "Amit Sharma",
+    "Company": "TechNova Solutions",
+    "Phone_Number": "+91 9876543210",
+    "Email": "amit.sharma@technova.in",
+    "Location": "Mumbai, Maharashtra",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Priya Nair",
+    "Company": "GreenLeaf Agro Pvt Ltd",
+    "Phone_Number": "+91 9823012345",
+    "Email": "priya.nair@greenleaf.in",
+    "Location": "Kochi, Kerala",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Rahul Mehta",
+    "Company": "FinEdge Analytics",
+    "Phone_Number": "+91 9810098765",
+    "Email": "rahul.mehta@finedge.in",
+    "Location": "Gurugram, Haryana",
+    "Status": "Inactive"
+  },
+  {
+    "Customer_Name": "Sneha Rao",
+    "Company": "BlueSky Tech",
+    "Phone_Number": "+91 9833445566",
+    "Email": "sneha.rao@bluesky.in",
+    "Location": "Bengaluru, Karnataka",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Rohit Verma",
+    "Company": "Swift Logistics",
+    "Phone_Number": "+91 9977889900",
+    "Email": "rohit.verma@swiftlogistics.in",
+    "Location": "Delhi",
+    "Status": "Pending"
+  },
+  {
+    "Customer_Name": "Anjali Patel",
+    "Company": "BrightFuture Education",
+    "Phone_Number": "+91 9123456780",
+    "Email": "anjali.patel@brightfuture.in",
+    "Location": "Ahmedabad, Gujarat",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Karan Singh",
+    "Company": "Medico HealthCare",
+    "Phone_Number": "+91 9001234567",
+    "Email": "karan.singh@medico.in",
+    "Location": "Jaipur, Rajasthan",
+    "Status": "Inactive"
+  },
+  {
+    "Customer_Name": "Divya Iyer",
+    "Company": "OceanView Resorts",
+    "Phone_Number": "+91 9700456789",
+    "Email": "divya.iyer@oceanview.in",
+    "Location": "Goa",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Vikram Das",
+    "Company": "MetroBuild Constructions",
+    "Phone_Number": "+91 9812345678",
+    "Email": "vikram.das@metrobuild.in",
+    "Location": "Kolkata, West Bengal",
+    "Status": "Pending"
+  },
+  {
+    "Customer_Name": "Meena Pillai",
+    "Company": "EcoSmart Energy",
+    "Phone_Number": "+91 9922334455",
+    "Email": "meena.pillai@ecosmart.in",
+    "Location": "Chennai, Tamil Nadu",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Arjun Reddy",
+    "Company": "NextGen Robotics",
+    "Phone_Number": "+91 9700123456",
+    "Email": "arjun.reddy@nextgen.in",
+    "Location": "Hyderabad, Telangana",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Ritu Malhotra",
+    "Company": "PureLife Organics",
+    "Phone_Number": "+91 9876001234",
+    "Email": "ritu.malhotra@purelife.in",
+    "Location": "Chandigarh",
+    "Status": "Inactive"
+  },
+  {
+    "Customer_Name": "Deepak Joshi",
+    "Company": "SkyNet Communications",
+    "Phone_Number": "+91 9856012345",
+    "Email": "deepak.joshi@skynet.in",
+    "Location": "Pune, Maharashtra",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Neha Kapoor",
+    "Company": "Visionary Designs",
+    "Phone_Number": "+91 9988776655",
+    "Email": "neha.kapoor@visionary.in",
+    "Location": "Delhi",
+    "Status": "Pending"
+  },
+  {
+    "Customer_Name": "Suresh Raina",
+    "Company": "AgriSmart Technologies",
+    "Phone_Number": "+91 9845012345",
+    "Email": "suresh.raina@agrismart.in",
+    "Location": "Lucknow, Uttar Pradesh",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Tanya D'Souza",
+    "Company": "UrbanStyle Interiors",
+    "Phone_Number": "+91 9723456789",
+    "Email": "tanya.dsouza@urbanstyle.in",
+    "Location": "Mangalore, Karnataka",
+    "Status": "Inactive"
+  },
+  {
+    "Customer_Name": "Manoj Tiwari",
+    "Company": "BuildRight Engineers",
+    "Phone_Number": "+91 9312345678",
+    "Email": "manoj.tiwari@buildright.in",
+    "Location": "Patna, Bihar",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Pooja Sharma",
+    "Company": "EduBridge Systems",
+    "Phone_Number": "+91 9877001122",
+    "Email": "pooja.sharma@edubridge.in",
+    "Location": "Indore, Madhya Pradesh",
+    "Status": "Pending"
+  },
+  {
+    "Customer_Name": "Abhishek Gupta",
+    "Company": "TravelX Tours",
+    "Phone_Number": "+91 9823123456",
+    "Email": "abhishek.gupta@travelx.in",
+    "Location": "Varanasi, Uttar Pradesh",
+    "Status": "Active"
+  },
+  {
+    "Customer_Name": "Kavita Menon",
+    "Company": "FineArt Studios",
+    "Phone_Number": "+91 9798012345",
+    "Email": "kavita.menon@fineart.in",
+    "Location": "Thiruvananthapuram, Kerala",
+    "Status": "Active"
+  }
+]

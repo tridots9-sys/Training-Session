@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Promotion Page</title>
+</head>
+<body>
+    <section class="bg-light min-vh-100 py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-primary text-white">
+                            <h2 class="mb-0">Create Promotion</h2>
+                        </div>
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="title" class="form-label">Promotion title</label>
+                                    <input type="text" class="form-control" id="title" placeholder="Enter Title">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Target-audience" class="form-label">Target Audience</label>
+                                    <select class="form-select" name="Target-audience">
+                                        <option>All Customer</option>
+                                        <option>Active Customer</option>
+                                        <option>Inactive Customer</option>                          
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="promotion-type" class="form-label">Promotion Type</label>
+                                    <select class="form-select" name="promotion-type">
+                                        <option>Email</option>
+                                        <option>SmS</option>
+                                        <option>Social Media</option>                          
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="comments" class="form-label">Comments</label>
+                                    <textarea name="comments" class="form-control" rows="4" placeholder="Enter Comments"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="start-date" class="form-label">Start Date</label>
+                                        <input type="date" class="form-control" id="start-date">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="end-date" class="form-label">End Date</label>
+                                        <input type="date" class="form-control" id="end-date">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

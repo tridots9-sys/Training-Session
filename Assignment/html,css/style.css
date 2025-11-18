@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html{
+    overscroll-behavior:none ;
+}
+
+.navbar{
+    width: 100%;
+    background: #222;
+    color: #fff;
+    padding: 15px 40px;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.navbar a{
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.menu-bar{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 5px 5px;
+}
+.dropdown{
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 57px;
+    left: 0px;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgpa(0,0,0,0,0.2);
+    z-index: 1000;
+    transition: 1s step-start ease;
+}
+
+.dropdown.active{
+    display: flex;
+}
+
+.dropdown ul li{
+    list-style: none;
+}
+
+.dropdown ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.toggle-btn{
+    border: 1px solid rgba(56,59,63,1);
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.bar{
+    width: 100%;
+    height: 2px;
+    padding: 2px;
+    display: block;
+    gap: 0;
+    background: rgba(155, 157, 158,1);
+    border-radius: 2px;
+}
+
+.container {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.sidebar{
+    width: 100%;
+    align-items: start;
+}
+.sidebar div{
+       border: 1px ridge #dee2e6 ;
+       border-radius:8px ;
+}
+
+.sidebar h3{
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.sidebar a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #222;
+}
+
+.sidebar a:nth-child(1){
+        border-bottom: 0.1px ridge #dee2e6;
+}
+.sidebar a:nth-child(2){
+        border-bottom: 0.1px ridge #dee2e6;
+}
+
+
+.cotent{
+    width: 75%;
+}
+
+.carousel{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    animation: slide 12s infinite;
+}
+
+.carousel img:nth-child(1){
+    animation-delay: 0s;
+}
+.carousel img:nth-child(2){
+    animation-delay: 4s;
+}
+.carousel img:nth-child(3){
+    animation-delay: 8s;
+}
+
+@keyframes slide {
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 1;
+    }
+    38%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+.prev.active, .next.active{
+    transform: scale(0.9);
+}
+.btn{
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 650px;
+}
+
+.prev,.next{
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px 0px;
+}
+
+.card img{
+    width: 100%;
+}
+
+
+.card-body{
+    padding: 15px;
+}
+
+.card-body h4{
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.card-body h5{
+    margin-bottom:10px ;
+}
+
+.card-footer{
+    background: rgba(0,0,0,0.17);
+    padding: 10px;
+}
+
+.star{
+    background: #000;
+}
+
+footer{
+    text-align: center;
+    background: black;
+    color: rgb(235, 219, 219);
+    padding: 10px;
+    margin-top: 40px;
+}
+
+@media (max-width:1020px) {
+
+    .container{
+        flex-direction: column;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .sidebar,.cotent{
+        width: 100%;
+    }
+
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-bar{
+        display: flex;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    .navbar-container{
+        justify-content: space-between;
+        font-size: 10px;
+    }
+    .menu-bar{
+        width: 25px;
+        height: 30px;
+    }
+    .container{
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 600px){
+    .products{
+        grid-template-columns: 1fr;
+    }
+}
+

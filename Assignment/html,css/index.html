@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="brand">
+                <h1>Shopping</h1>
+
+            </div>
+            <div class="dropdown" id="dropdown">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+            </div>
+            <div class="toggle-btn">
+                <div class="menu-bar">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div class="nav-list">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+
+            <div class="sidebar">
+                <h3>Shop Name</h3>
+                <div>
+                    <a href="#">Category 1</a>
+                    <a href="#">Category 2</a>
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
+
+            <div class="content">
+
+                <div class="carousel">
+                    <img src="/Assignment/img/2007.i605.004.online shopping horizontal banner.jpg" class="slide active">
+                    <img src="/Assignment/img/vecteezy_shopping-bag-banner-vector-design_8554188-1.jpg" alt="" class="slide">
+                    <img src="/Assignment/img/banner 1.jpg" alt="" class="slide">
+                    <!-- <div class="btn">
+                        <button class="prev">&lt;</button>
+                        <button class="next">&gt;</button>
+                    </div> -->
+                </div>
+
+                <div class="products">
+
+                    <div class="card">
+                        <img src="/Assignment/img/vecteezy_shopping-bag-banner-vector-design_8554188-1.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Item One</h4>
+                            <h5>$24.99</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="card-footer">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/Assignment/img/vecteezy_shopping-bag-banner-vector-design_8554188-1.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Item One</h4>
+                            <h5>$24.99</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+
+                        </div>
+                        <div class="card-footer">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/Assignment/img/vecteezy_shopping-bag-banner-vector-design_8554188-1.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Item One</h4>
+                            <h5>$24.99</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="card-footer">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/Assignment/img/vecteezy_shopping-bag-banner-vector-design_8554188-1.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Item One</h4>
+                            <h5>$24.99</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="card-footer">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/Assignment/img/vecteezy_shopping-bag-banner-vector-design_8554188-1.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Item One</h4>
+                            <h5>$24.99</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="card-footer">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/Assignment/img/vecteezy_shopping-bag-banner-vector-design_8554188-1.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Item One</h4>
+                            <h5>$24.99</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="card-footer">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Your Website 2025
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    let index = 0
+    const slides = $('.slide')
+    $('.menu-bar').click(() => {
+        $('.dropdown').toggleClass('active')
+    })
+
+    function showSlide(i) {
+        slides.removeClass('active')
+        slides.eq(i).addClass('active')
+    }
+
+    $('.next').click(()=>{
+        index = (index + 1)%slides.length;
+        showSlide(index)
+    })
+
+    $('.prev').click(()=>{
+        index = (index-1 + slides.length) % slides.length;
+        showSlide(index)
+    })
+</script>
+
+</html>

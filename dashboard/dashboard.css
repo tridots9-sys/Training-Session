@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #000000;
+    color: #9197B3;
+}
+
+.container{
+    display: flex;
+}
+
+/* ---------------------Side Bar---------------------------*/
+
+.navbar{
+    width: 20%;
+    max-width: 30%;
+    height: auto;
+    background: #EEEEEE;
+}
+
+.title{
+    display: flex;
+    gap: 10px;
+    padding: 40px;
+    font-weight: 200;
+}
+
+.navbar-list{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.navbar-list:nth-child(4){
+    background: blue;
+}
+
+.navbar-list img{
+    width: 32px;
+    cursor: pointer;
+}
+
+
+/*---------------------------Side Container---------------------------*/
+
+.sub-container{
+    background: #EEEEEE;
+    width: 100%;
+    min-width: 450px;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu-bar {
+    display: flex;
+    width:40px;
+    height: 40px;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar{
+    background: #000;
+    width: 100%;
+    height: 5px; 
+    display: block;
+    border-radius: 2px;
+}
+
+.navbar.active{
+    display: block;
+}
+
+.sub-header{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px;
+}
+
+.search{
+    background: white;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.search input{
+    border: none;
+    font-size: 22px;
+    color:black
+}
+
+.card{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    box-shadow: 0px 3px 5px 1px;
+    border-radius: 20px;
+    place-items: center;
+    padding: 17px;
+    background: white;
+}
+
+.sub-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: whitesmoke;
+    padding: 20px 40px;
+    border-radius: 30px;
+}
+
+.table-content {
+    margin: 80px;
+    box-shadow: 0px 3px 5px 1px;
+    border-radius: 30px;
+    background: white;
+}
+
+.table-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+
+}
+
+.filters {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.filters input{
+    border: none;
+    padding: 10px;
+    box-shadow: 0px 0px 1px 0px;
+}
+
+.filters div{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.filters div select{
+    border: none;
+}
+
+
+.table{
+    margin: 50px 70px;
+    padding-bottom: 25px;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+table{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th{
+    border-bottom: 1px solid black;
+    padding: 25px;
+}
+
+th{
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 100;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    color: #dab0b0;
+}
+
+td button{
+    padding: 10px;
+    background: #dab5b5;
+    color: black;
+    border: none;
+    border-radius: 3px;
+}
+
+
+@media (min-width: 320px) and (max-width:800px){
+
+    .title{
+        padding: 10px;
+    }
+
+    .navbar{
+    
+        height: auto;
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+    .navbar-list{
+        padding: 10px;
+        margin: 20px;
+
+    }
+    .navbar-list h3, .title h1{
+        display: none;
+    }
+
+    .card{
+        margin: 20px;
+        padding: 20px;
+    }
+    .sub-card{
+        padding: 10px 30px;
+    }
+
+    .table-content{
+        margin: 20px;
+    }
+
+    .table-header{
+        display: block;
+    }
+
+    .table{
+        padding: 20px;
+        margin: 30px 40px;
+    }
+
+    tr{
+        font-size: 17px;
+    }
+
+    .user{
+        margin-top: 80px;
+    }
+
+    .user img{
+        width: 45px;
+    }
+    .user h3{
+        display: none;
+    }
+
+
+}
+
+@media (width > 768px){
+    .menu-bar{
+        display: none;
+    }
+    .navbar-list{
+        padding: 15px;
+        margin: 20px;
+        gap: 20px;
+    }
+
+
+}
+
