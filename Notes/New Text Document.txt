@@ -22,5 +22,16 @@ Directory Structure:
  └── common_site_config.json------------> Site config that is available in all sites
 
 
+Bench Init Cmd:
+
+Bench init <bench name> --frappe-branch <version> --python <version path>
+
+Bench Create New Site:
+
+Bench new-site <site name> --db-name <database name> --mariadb-root-password <password here>
+
+
+
+
 
 
