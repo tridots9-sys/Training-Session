@@ -1,0 +1,26 @@
+Directory Structure:
+.
+├── Procfile--------------------------> List of processes that run in development
+├── apps
+│ └── frappe
+├── config----------------------------> Config files for Redis and Nginx
+│ ├── pids
+│ ├── redis_cache.conf
+│ ├── redis_queue.conf
+│ └── redis_socketio.conf
+├── env  -----------------------------> Python virtual environment
+│ ├── bin
+│ ├── include
+│ ├── lib
+│ └── share
+├── logs-------------------------------> Log files for every process (web, worker)
+│ ├── backup.log
+│ └── bench.log
+└── sites
+ ├── apps.txt---------------------------> List of installed frappe apps
+ ├── assets-----------------------------> Static assets that served via Nginx in production
+ └── common_site_config.json------------> Site config that is available in all sites
+
+
+
+
