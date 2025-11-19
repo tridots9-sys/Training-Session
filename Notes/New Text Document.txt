@@ -33,5 +33,99 @@ Bench new-site <site name> --db-name <database name> --mariadb-root-password <pa
 
 
 
+1️⃣ bench init mybench
+$ bench init mybench
+INFO: Bench Initializing...
+$ python3 -m venv env
+$ ./env/bin/pip install -U pip setuptools wheel
+Collecting pip
+Collecting setuptools
+Collecting wheel
+Installing collected packages...
+ 
+INFO: Cloning frappe framework...
+$ git clone https://github.com/frappe/frappe --branch version-15
+Cloning into 'frappe'...
+remote: Enumerating objects...
+remote: Counting objects...
+Receiving objects...
+ 
+INFO: Installing node dependencies...
+$ yarn install
+✔ Done
+ 
+SUCCESS: Bench Initialized
+2️⃣ bench new-app demo_app
+$ bench new-app demo_app
+INFO: Creating new Frappe App 'demo_app'
+ 
+App Title: Demo App
+App Description: Sample App for Testing
+App Publisher: Jack
+App Email: test@example.com
+App License: MIT
+ 
+Creating folder demo_app...
+Writing setup.py...
+Writing hooks.py...
+Writing modules...
+Writing demo_app/config/desktop.py
+Writing demo_app/modules.txt
+ 
+SUCCESS: App Created: demo_app
+3️⃣ bench new-site test.local
+$ bench new-site test.local
+MySQL root password:
+Admin Password:
+Re-enter Admin Password:
+ 
+Creating Database...
+Creating Database Tables...
+Syncing DocTypes...
+Installing frappe...
+ 
+SUCCESS: New Site Created: test.local
+4️⃣ bench install-app demo_app (on Site)
+$ bench --site test.local install-app demo_app
+Installing demo_app...
+Running Patches...
+Updating DocTypes...
+Updating Database Schema...
+Updating Dashboard Charts...
+ 
+SUCCESS: demo_app Installed on test.local
+5️⃣ bench start
+$ bench start
+WARN: No redis queue found, starting one...
+ 
+20:30:10 system            | redis_queue started
+20:30:11 system            | redis_cache started
+20:30:11 system            | worker default started
+20:30:11 webserver         | Started frappe development server at localhost:8000
+20:30:12 watch             | Watching JS/CSS for changes...
+ 
+Frappe server is running!
+6️⃣ bench build
+$ bench build
+Building frappe assets...
+✔ JS Compiled
+✔ CSS Processed
+✔ Dependencies Bundled
+ 
+Output saved to: sites/assets
+7️⃣ bench migrate
+$ bench --site test.local migrate
+Running DB Patches...
+Applying patch frappe.patches.v15_0.update_user...
+Updating Schema...
+Syncing DocTypes...
+Clearing Cache...
+ 
+SUCCESS: Migration Complete
+
+
+
+
+
 
 
